@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>es6 conditional </h1>
+    <br>
+    <form onsubmit="checkPin(); return false">
+    <h3>ATM Machine</h3>
+
+    Enter your pin:
+    <input type="number" id="userinputpin" required>
+    <button>conform</button>
+
+    <h4 id="errorMessage"></h4>
+    <div id="homeScreen">
+
+    </div>
+    <script>
+         let moneyBox = 22000; // atm machine money box
+        let cardDailyLimit = 20000;
+        let accountBalance = 100000;
+
+        function checkPin() {
+            console.log("I am Checking Pin");
+            let userinputpin = document.querySelector("#userinputpin").value;
+
+
+        }
+
+    </script>    
+    
+    </form>
+</body>
+</html>
