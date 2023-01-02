@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>es6 Object</h1>
+
+    <p id="cma"></p>
+    <script>
+
+        let user = {name: `deni`, email: `deni@gmail.com`, rollNumber: 33567, age: 20, role: `student`, isActive: true, major: `science`}
+
+        console.log(user[`name`])
+        console.log(user[`email`])
+        console.log(user[`rollNumber`])
+        console.log(user[`age`])
+        console.log(user[`role`])
+        // console.log(user[`major`])
+
+        console.log(user.isActive)
+        console.log(user.major)
+
+        document.querySelector("#cma").innerHTML += user[`name`]
+        
+        user[`name`] = "Daniyal"
+        user[`email`] = "Daniyal114@gmail.com"
+        user[`age`] = 19
+        user.isActive = false
+        user.major = "arts"
+        user.rollNumber = 10
+
+        console.log("after changes===================>")
+        console.log(user[`name`])
+        console.log(user[`email`])
+        console.log(user[`rollNumber`])
+        console.log(user[`age`])
+        console.log(user[`role`])
+
+        console.log(user.isActive)
+        console.log(user.major)
+
+        document.querySelector("#cma").innerHTML += user[`name`]
+        document.querySelector("#cma").innerHTML += user[`email`]
+
+</script>
+</body>
+</html>
